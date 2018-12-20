@@ -7,23 +7,23 @@ namespace Calculator {
     public class Calculator {
 
         public decimal ValueInMemory { get; set; }
+        public bool UsingCalc { get; set; } = true;
+        public int ContinueOperation { get; set; } = 1;
 
-        public decimal Addition(decimal arg1, decimal arg2) {
-            return arg1 + arg2;
+        public decimal Add(decimal a, decimal b) {
+            return a + b;
         }
-        public decimal Subtract(decimal arg1, decimal arg2) {
-            return arg1 - arg2;
+        public decimal Subtract(decimal a, decimal b) {
+            return a - b;
         }
-        public decimal Multiply(decimal arg1, decimal arg2) {
-            return arg1 * arg2;
+        public decimal Multiply(decimal a, decimal b) {
+            return a * b;
         }
-        public decimal Divide(decimal arg1, decimal arg2) {
-            return arg1 / arg2;
+        public decimal Divide(decimal a, decimal b) {
+            return a / b;
         }
-        public decimal Exponential(decimal arg1, decimal arg2) {
-           return (decimal) Math.Pow((double)arg1, (double)arg2);
+        public decimal Exponential(decimal a, decimal b) {
+            return (decimal)Math.Pow((double)a, (double)b);
         }
-
-         
     }
 }
